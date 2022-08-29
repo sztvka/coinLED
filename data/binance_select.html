@@ -1,0 +1,38 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>coinLED</title>
+    <script language="javascript" type="text/javascript">
+      if(!String.prototype.trim) {
+        String.prototype.trim = function () {
+          return this.replace(/^\s+|\s+$/g,'');
+        };
+      }
+      function textTrim(){
+        document.getElementById("input1").value = document.getElementById("input1").value.trim();
+        document.getElementById("input2").value = document.getElementById("input2").value.trim();
+        document.getElementById("input3").value = document.getElementById("input3").value.trim();
+      }
+
+    </script>
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+        <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 249.06 74.37"><defs><style>.cls-1,.cls-2,.cls-3{stroke:#000;}.cls-1,.cls-2,.cls-3,.cls-4{stroke-miterlimit:22.93;}.cls-1{stroke-width:0.71px;}.cls-1,.cls-4{fill-rule:evenodd;}.cls-2{fill:none;stroke-width:0.99px;}.cls-3{stroke-width:0.57px;}.cls-4{fill:#fff;stroke:#fff;stroke-width:2.13px;}</style></defs><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"><g id="coinLED"><path class="cls-1" d="M8.32,40.07A8.9,8.9,0,0,0,9.6,44.74a9.56,9.56,0,0,0,3.45,3.41,9.14,9.14,0,0,0,4.69,1.26,10.57,10.57,0,0,0,4.71-1,8.21,8.21,0,0,0,3.31-2.87A7.63,7.63,0,0,0,27,41.37h1.38A8.64,8.64,0,0,1,27,46.18a9.7,9.7,0,0,1-3.82,3.4,11.75,11.75,0,0,1-5.42,1.25,10.52,10.52,0,0,1-5.4-1.46,10.84,10.84,0,0,1-3.95-3.92,10.42,10.42,0,0,1-1.45-5.38V33.79a10.57,10.57,0,0,1,1.43-5.38,10.76,10.76,0,0,1,3.91-3.93A10.42,10.42,0,0,1,17.66,23,11.61,11.61,0,0,1,23,24.27a10,10,0,0,1,3.85,3.41,8.61,8.61,0,0,1,1.42,4.81H26.93a7.54,7.54,0,0,0-1.27-4.14,8.34,8.34,0,0,0-3.31-2.87,10.4,10.4,0,0,0-4.69-1A9.07,9.07,0,0,0,13,25.71a9.45,9.45,0,0,0-3.41,3.41,9,9,0,0,0-1.26,4.67v6.28ZM45.81,23a10.75,10.75,0,0,1,5.51,1.47A11,11,0,0,1,56.8,34v5.82a11,11,0,0,1-16.51,9.51,10.89,10.89,0,0,1-4-4,10.75,10.75,0,0,1-1.47-5.51V34a10.81,10.81,0,0,1,1.47-5.52,11,11,0,0,1,4-4A10.81,10.81,0,0,1,45.81,23ZM36.23,39.84a9.31,9.31,0,0,0,1.29,4.8,9.61,9.61,0,0,0,13.09,3.49,9.57,9.57,0,0,0,3.49-3.49,9.4,9.4,0,0,0,1.28-4.8V34a9.51,9.51,0,0,0-4.77-8.29A9.57,9.57,0,0,0,36.23,34v5.82ZM82.8,23.6V25h-8V48.84h8v1.41H65.53V48.84h7.92V25H65.53V23.6Zm9.26,26.65V23.6h1.5l18.61,18.08V23.6h1.42V50.25h-1.42V43.67L93.48,25.44V50.25Z"/><rect class="cls-2" x="0.5" y="0.5" width="248.07" height="73.37" rx="27.14" ry="27.14"/><rect class="cls-3" x="120.4" y="0.5" width="128.16" height="73.37" rx="24.42" ry="24.42"/><path class="cls-4" d="M134.68,56.5v-40h1.94V54.37H162V56.5Zm37.4-40H197.7v2.13H174V34.84h20.61V37H174v17.4H197.7V56.5H172.08v-40Zm50.88,0a13.31,13.31,0,0,1,7.35,2.18,15.71,15.71,0,0,1,5.36,5.89,16.75,16.75,0,0,1,2,8.07v7.7a16.75,16.75,0,0,1-2,8.07,15.71,15.71,0,0,1-5.36,5.89A13.31,13.31,0,0,1,223,56.5H209.52v-40Zm12.76,16.14a14.61,14.61,0,0,0-1.72-7,13.65,13.65,0,0,0-4.68-5.11,11.68,11.68,0,0,0-6.41-1.89H211.46V54.37h11.45a11.68,11.68,0,0,0,6.41-1.89A13.57,13.57,0,0,0,234,47.37a14.61,14.61,0,0,0,1.72-7Z"/></g></g></svg>
+
+          <h1>Pary Binance</h1>
+        <h4>Proszę wpisać w tym samym formacie, w jakim są na giełdzie. Przykład: BTCUSDT<br>Kartę można wyłączyć klikając przycisk WYŁĄCZ, lub zapisując pustą listę.</h4>
+          <form class="login-form" action="binance" method="get">
+            <input id="input1" type="text" placeholder="Para 1" name="coin1" maxlength = "30" onchange="textTrim()"/>
+            <input id="input2" type="text" placeholder="Para 2" name="coin2" maxlength = "30" onchange="textTrim()"/>
+            <input id="input3" type="text" placeholder="Para 3" name="coin3" maxlength = "30" onchange="textTrim()"/>
+            <button>ZAPISZ</button>
+          </form>
+          <a href="binance?coin1=&coin2=&coin3="><button style="margin-bottom: 1rem;">WYŁĄCZ</button></a>
+          <a href="index.html"><button>WSTECZ</button></a>
+        </div>
+      </div>
+</body>
+</html>
