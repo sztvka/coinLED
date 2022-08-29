@@ -2,7 +2,7 @@
 
 # coinLED
 coinLED is a sleek desktop crypto price tracker powered with an USB-C. It's my first bigger project, even though it works, it lacks polish in terms of parts choice and code quality.
-This repo serves as an ** open archive of an closed-source ** project developed in the beginning of 2021.
+This repo serves as an **open archive of an closed-source** project developed in the beginning of 2021.
 
 ## Features
 
